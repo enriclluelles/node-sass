@@ -61,10 +61,10 @@ Check out the project:
     git clone https://github.com/andrew/node-sass.git
     cd node-sass
     npm install
-
-Rebuild the binary:
-
-    node rebuild.js
+    npm install -g node-gyp
+    git submodule init
+    git submodule update
+    node-gyp rebuild
 
 Replace the prebuild binary with your newly generated one
 
